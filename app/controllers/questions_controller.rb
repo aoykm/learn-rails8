@@ -41,7 +41,7 @@ class QuestionsController < ApplicationController
     if @question.update(question_params)
       redirect_to @question
     else
-      render 'edit', status: :unprocessable_entity
+      render "edit", status: :unprocessable_entity
     end
   end
 
